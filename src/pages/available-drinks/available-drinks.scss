@@ -1,0 +1,177 @@
+$wine:#722f37;
+page-available-drinks {
+  .content-md {
+    color: white;
+
+    background: no-repeat url("http://images.all-free-download.com/images/graphiclarge/wine_barrel_03_hd_pictures_168429.jpg") ;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+
+  .content-ios{
+
+    background: no-repeat url("https://drinks-dvq6ncf.netdna-ssl.com//wordpress/wp-content/uploads/2015/06/barrels-640x480.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+
+
+  /*.content-md {
+    background: no-repeat url("https://images.pexels.com/photos/340996/pexels-photo-340996.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .content-ios {
+    background: no-repeat url("https://media.timeout.com/images/103426100/750/422/image.jpg");
+    background-size: cover;
+    background-position: center;
+
+  }*/
+  .gridStyle{
+  }
+  #wine{
+    visibility: visible;
+    display: none;
+  }
+  #whiskey{
+    visibility: visible;
+    display: none;
+  }
+  #vodka{
+    visibility: hidden;
+    display: none;
+  }
+  #brandy{
+    visibility: hidden;
+    display: none;
+  }
+  .text{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-shadow: 3px 3px black;
+  }
+
+  .scroll-content{
+    padding: 0px;
+  }
+  .card{
+    background-color: #bfbfbf  ;
+    opacity: 0.8;
+    max-height: 60%;
+    max-width: 60%;
+
+    border-radius: 10%;
+    box-shadow: 5px 5px black ;
+    text-align: center;
+  }
+  .col {
+
+    text-align: center;
+    max-height: 30%;
+    max-width: 30%;
+
+  }
+  img{
+    opacity: 1;
+    border-radius: 50%;
+    background-color: white;
+    height: 12em;               //if same size images not found
+    box-shadow: -1px 3px 3px 2px  black;
+    /*max-height: 30%;
+    max-width: 30%;*/
+  }
+  .card-content-md{
+    border-radius: 30%;
+  }
+  .card-content-md{
+    border-radius: 30%;
+  }
+  .card-title-md{
+    text-align:center;
+    font-size: 1em;
+    color: black ;      //#36161a
+
+    white-space: normal;
+    font-weight: bolder;
+  }
+
+  ion-row{
+    width: 100%;
+  }
+
+  ion-scroll[scrollX] {
+    white-space: nowrap;
+    height: 22em;
+    overflow: hidden;
+    .scroll-item {
+      display: inline-block;
+    }
+
+  }
+
+  ion-scroll[scroll-card]{
+    height: 40%;
+  }
+
+  /* Hide ion-content scrollbar */
+  ::-webkit-scrollbar{
+    display:none;
+  }
+
+
+
+
+  /*
+
+  .card-md{
+    max-width: 25rem;
+    max-height: 30rem;
+
+  }
+img{
+  max-width: 25rem;
+  max-height: 20rem;
+}
+*/
+  /*
+  ion-card-content{
+    height: 100%;
+  }*/
+
+}
+/*
+page-available-drinks {
+  opacity:0.6;
+
+  #back{
+    background-image: url("https://media.timeout.com/images/103426100/750/422/image.jpg");
+  }
+  h3{
+    color: white;
+  }
+  .available{
+
+
+  }
+  .drinks .card-md{
+
+    width: 30%;
+    height: 30%;
+
+  }
+  ion-label{
+    opacity: 1;
+  }
+  img{
+    width: 30%;
+    height: 30%;
+    opacity: 1;
+  }
+
+}
+*/

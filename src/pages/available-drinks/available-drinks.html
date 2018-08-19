@@ -1,0 +1,244 @@
+<!--
+  Generated template for the AvailableDrinksPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><div class="text">Available Drinks</div></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div class="text" >Available Brandy</div>
+  <ion-scroll scrollX="true">
+    <ion-card *ngFor="let drink of brandy" style="text-align: center" class="scroll-item" (click)="openModal(drink)">
+      <ion-card-content>
+        <img src={{drink.image}}/>
+        <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+        <p><b>${{drink.cost}}</b></p>
+
+      </ion-card-content>
+    </ion-card>
+
+  </ion-scroll>
+
+
+
+  <div class="text">Available Vodka</div>
+  <ion-scroll scrollX="true">
+    <ion-card *ngFor="let drink of vodka" class="scroll-item" (click)="openModal(drink)">
+      <ion-card-content>
+        <img src={{drink.image}}/>
+        <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+        <p><b>${{drink.cost}}</b></p>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-scroll>
+
+
+
+  <div class="text">Available Whiskey</div>
+  <ion-scroll scrollX="true">
+    <ion-card *ngFor="let drink of whiskey" class="scroll-item" (click)="openModal(drink)">
+      <ion-card-content>
+        <img src={{drink.image}}/>
+        <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+        <p><b>${{drink.cost}}</b></p>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-scroll>
+
+  <div class="text">Available Wine</div>
+  <ion-scroll scrollX="true">
+    <ion-card *ngFor="let drink of wine" class="scroll-item" (click)="openModal(drink)">
+      <ion-card-content>
+        <img src={{drink.image}}/>
+        <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+        <p><b>${{drink.cost}}</b></p>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-scroll>
+
+
+
+  <!--<br>
+  <button (click)="showBrandy()" style="border: none; background-color: black; color: white; font-weight: bold;">Your Brandy's</button>
+
+    <ion-scroll id="brandy" scrollX="true">
+      <ion-card *ngFor="let drink of brandy" class="scroll-item" (click)="openModal(drink)">
+        <ion-card-content>
+          <img src={{drink.image}}/>
+          <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+
+        </ion-card-content>
+      </ion-card>
+
+    </ion-scroll>
+
+<br>
+
+
+  <button (click)="showVodka()" style="border: none; background-color: black; color: white; font-weight: bold;">Your Vodka's</button>
+
+    <ion-scroll id="vodka" scrollX="true">
+      <ion-card *ngFor="let drink of vodka" class="scroll-item" (click)="openModal(drink)">
+        <ion-card-content>
+          <img src={{drink.image}}/>
+          <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-scroll>
+
+  <br>
+
+
+
+  <button (click)="showWhiskey()" style="border: none;background-color: black; color: white; font-weight: bold;">Your Whiskey's</button>
+    <ion-scroll  id="whiskey" scrollX="true">
+      <ion-card *ngFor="let drink of whiskey" class="scroll-item" (click)="openModal(drink)">
+        <ion-card-content>
+          <img src={{drink.image}}/>
+          <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-scroll>
+
+  <br>
+
+  <button (click)="showWine()" style="border: none;background-color: black; color: white; font-weight: bold;">Your Wine's</button>
+
+   <ion-scroll id="wine" scrollX="true">
+    <ion-card *ngFor="let drink of wine" class="scroll-item" (click)="openModal(drink)">
+      <ion-card-content>
+        <img src={{drink.image}}/>
+        <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-scroll>-->
+
+
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Available Drinks</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content #back padding>
+
+
+ &lt;!&ndash; <div *ngIf="beerIsValid">
+    <h3>Your Available Beer's</h3>
+    <ion-list>
+      <ion-item-sliding *ngFor="let drink of beer" >
+        <ion-item>
+          <ion-card (click)="openModal(drink)" >
+            <img src={{drink.image}}>
+            <ion-card-content>
+              <ion-card-title color="indigo">{{drink.name}}</ion-card-title>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-item>
+      </ion-item-sliding>
+    </ion-list>
+  </div>
+&ndash;&gt;
+  &lt;!&ndash;Brandy's&ndash;&gt;
+  <div class="available" *ngIf="brandyIsValid">
+    <h3>Your Available Brandy's</h3>
+    <ion-list>
+      <ion-item-sliding *ngFor="let drink of brandy" >
+        <ion-item>
+          <ion-card (click)="openModal(drink)" >
+            <img src={{drink.image}}>
+            <ion-card-content>
+              <ion-card-title color="indigo">{{drink.name}}</ion-card-title>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-item>
+      </ion-item-sliding>
+    </ion-list>
+  </div>
+
+  &lt;!&ndash;Vodka's&ndash;&gt;
+  <div class="available" *ngIf="vodkaIsValid">
+    <h3>Your Available Vodka's</h3>
+    <ion-list>
+      <ion-item-sliding *ngFor="let drink of vodka" >
+        <ion-item>
+          <ion-card (click)="openModal(drink)" >
+            <img src={{drink.image}}>
+            <ion-card-content>
+              <ion-card-title color="indigo">{{drink.name}}</ion-card-title>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-item>
+      </ion-item-sliding>
+    </ion-list>
+  </div>
+
+  &lt;!&ndash;Whiskey's&ndash;&gt;
+  &lt;!&ndash;Vodka's&ndash;&gt;
+  <div class="available" *ngIf="whiskeyIsValid">
+    <h3>Your Available Whiskey's</h3>
+    <ion-list>
+      <ion-item-sliding *ngFor="let drink of whiskey" >
+        <ion-item class="drinks">
+          <ion-card (click)="openModal(drink)" >
+            <img src={{drink.image}}>
+            <ion-card-content>
+              <ion-card-title color="indigo">{{drink.name}}</ion-card-title>
+
+            </ion-card-content>
+          </ion-card>
+        </ion-item>
+      </ion-item-sliding>
+    </ion-list>
+  </div>
+
+</ion-content>
+-->

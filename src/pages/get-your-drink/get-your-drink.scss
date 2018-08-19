@@ -1,0 +1,45 @@
+.card-content-md{
+align-items: center;
+
+}
+page-get-your-drink{
+  .content-ios{
+    background: no-repeat url("https://i.pinimg.com/736x/ca/cb/98/cacb98c1f7286176c6c09427c64c3017--blue-patterns-samsung-galaxy-s.jpg");
+    background-size: cover;
+  }
+  .content-md{
+    background: no-repeat url("https://i.pinimg.com/736x/ca/cb/98/cacb98c1f7286176c6c09427c64c3017--blue-patterns-samsung-galaxy-s.jpg");
+    background-size: cover;
+  }
+}
+#bottle{
+  background:url("https://i.pinimg.com/736x/63/be/a6/63bea6cded710e51386d26d3352dd664--galaxy-s-samsung-galaxy-s.jpg");
+}
+#container {
+  background: no-repeat url("../assets/imgs/wine_bottle.png");
+  width: 340px;
+  height: 480px;
+  padding-top: 5px;
+}
+
+#water {
+  background: no-repeat url('http://www.kubipet.com/data/out/26/iwp779854957-burgundy-wallpapers.jpg');
+
+
+  position: absolute;
+  bottom:-96px;
+  width: 107px;
+  left: 17.5%;
+  height: 311px;
+  transition: all 1s ease-out;
+  border-top-left-radius:15px;
+  border-top-right-radius:12px;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+.quantity{
+  background-color: #3399ff;
+  font-weight: bolder;
+  box-shadow: -1px 2px 1px 1px black;
+}
+

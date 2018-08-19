@@ -1,0 +1,65 @@
+<!--
+  Generated template for the DescriptionModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>About {{data.name}}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <div style="text-align: center">
+
+
+
+    <ion-card id="bottle">
+      <ion-card-content>
+        <img class="imgStyle" src={{data.image}}/>
+        <ion-card-title class="titleStyle">{{data.name}}</ion-card-title>
+
+        <button  ion-button round (click)="validate()"> Purchase</button>
+
+
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <p><b>Name: </b><br> <i>{{data.name}}</i></p>
+            </ion-col>
+            <ion-col>
+              <p><b>Cost: </b><br> <i>${{data.cost}}</i></p>
+            </ion-col>
+            <ion-col>
+              <p><b>Quantity: </b><br> <i>{{data.ml_left}} ml</i></p>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+            <p><b>Purchased: </b> <i>{{data.purchased.toUpperCase()}} </i></p>
+          </ion-row>
+
+          <ion-row style="text-align: justify">
+            <p><b>Description: </b><br> <i>{{data.description}} </i></p>
+          </ion-row>
+
+
+        </ion-grid>
+
+      </ion-card-content>
+    </ion-card>
+
+
+
+  </div>
+
+</ion-content>

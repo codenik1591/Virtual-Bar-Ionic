@@ -1,0 +1,28 @@
+page-qr-modal {
+
+  .content-md {
+    color: white;
+
+    background: no-repeat url("http://images.all-free-download.com/images/graphiclarge/wine_barrel_03_hd_pictures_168429.jpg") ;
+    background-size: cover;
+    background-position: center;
+
+    opacity: 1;
+  }
+
+  .content-ios{
+
+    background: no-repeat url("https://drinks-dvq6ncf.netdna-ssl.com//wordpress/wp-content/uploads/2015/06/barrels-640x480.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+  .card{
+    opacity: 1;
+    border-radius: 5%;
+  }
+
+  h3{
+    text-align: center;
+  }
+}

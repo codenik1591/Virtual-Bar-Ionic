@@ -1,0 +1,171 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Your Drinks</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="home">
+
+  <div class="text"><h2>Hey Nikhil</h2></div>
+
+  <div class="text">Your Brandy</div>
+  <ion-scroll scrollX="true">
+    <ion-card *ngFor="let drink of brandyPurchased" class="scroll-item" (click)="openModal(drink)">
+      <ion-card-content>
+        <img src={{drink.image}}/>
+        <ion-card-title>{{drink.name}}</ion-card-title>
+
+      </ion-card-content>
+    </ion-card>
+
+  </ion-scroll>
+
+
+
+  <div class="text">Your Vodka</div>
+  <ion-scroll scrollX="true">
+    <ion-card *ngFor="let drink of vodkaPurchased" class="scroll-item" (click)="openModal(drink)">
+      <ion-card-content>
+        <img src={{drink.image}}/>
+        <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-scroll>
+
+
+
+  <div class="text">Your Whiskey</div>
+  <ion-scroll scrollX="true">
+    <ion-card *ngFor="let drink of whiskeyPurchased" class="scroll-item" (click)="openModal(drink)">
+      <ion-card-content>
+        <img src={{drink.image}}/>
+        <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-scroll>
+
+  <div class="text">Your Wine</div>
+  <ion-scroll scrollX="true">
+    <ion-card *ngFor="let drink of winePurchased" class="scroll-item" (click)="openModal(drink)">
+      <ion-card-content>
+        <img src={{drink.image}}/>
+        <ion-card-title color="indigo" >{{drink.name}}</ion-card-title>
+      </ion-card-content>
+    </ion-card>
+
+  </ion-scroll>
+
+
+
+
+
+
+
+
+
+
+
+  <!--Brandy's-->
+  <!--<h3>Your Brandy's</h3>
+  <ion-scroll scrollX="true">
+    <ion-card  >
+      <ion-card-content>
+        <ion-card-title color="indigo">{{whiskey[0].name}} </ion-card-title>
+
+      </ion-card-content>
+    </ion-card>
+    <br>
+
+  </ion-scroll>-->
+
+
+  <!--<ion-grid  class="gridStyle">
+
+      <ion-row *ngFor="let row of gridBrandy">
+        <ion-col *ngFor="let col of row">
+
+          <ion-card (click)="openModal(col)" >
+            &lt;!&ndash;<ion-img src={{col.image}} style="width: 100px; height: 100px;" ></ion-img>&ndash;&gt;
+            <img src={{col.image}}>
+            <ion-card-content>
+              <ion-card-title >{{col.name}}</ion-card-title>
+
+            </ion-card-content>
+          </ion-card>
+
+        </ion-col>
+      </ion-row>
+
+  </ion-grid>-->
+
+
+
+  <!--Try this-->
+
+
+  <!--<ion-scroll scrollX="true" style="overflow-x:auto; ">
+    <div style="overflow-x: scroll;">
+      <ion-list *ngFor="let row of brandy">
+        <ion-card >
+
+          Hello !
+          <img src={{row.image}}>
+          <ion-card-content>
+            <ion-card-title >{{row.name}}</ion-card-title>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-list>
+    </div>
+  </ion-scroll>-->
+
+  <!--
+    &lt;!&ndash;Vodka's&ndash;&gt;
+    <h3>Your Vodka's</h3>
+    <ion-grid width-50 class="gridStyle">
+      <ion-row *ngFor="let row of gridVodka">
+        <ion-col width-50 *ngFor="let col of row">
+
+          <ion-item>
+            <ion-card (click)="openModal(col)" >
+              <img style="width: 100px; height: 100px;" src={{col.image}}>
+              <ion-card-content>
+                <ion-card-title color="indigo">{{col.name}}</ion-card-title>
+
+              </ion-card-content>
+            </ion-card>
+          </ion-item>
+
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+
+    &lt;!&ndash;Whiskey's&ndash;&gt;
+    <h3>Your Whiskey's</h3>
+    <ion-grid width-50 class="gridStyle">
+      <ion-row *ngFor="let row of gridWhiskey">
+        <ion-col width-50 *ngFor="let col of row">
+
+          <ion-item>
+            <ion-card (click)="openModal(col)" >
+              <img style="width: 100px; height: 100px;" src={{col.image}}>
+              <ion-card-content>
+                <ion-card-title color="indigo">{{col.name}}</ion-card-title>
+
+              </ion-card-content>
+            </ion-card>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>-->
+
+
+</ion-content>

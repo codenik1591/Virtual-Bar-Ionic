@@ -1,0 +1,33 @@
+<!--
+  Generated template for the QrModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>QR Code</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card style="text-align: center">
+    <ion-card-content>
+      <img src={{finQRCode}}/>
+      <ion-card-title color="indigo" >{{qrCode}} ML Nikhil</ion-card-title>
+    </ion-card-content>
+  </ion-card>
+
+  <div>
+    <br>
+    <h3>Scan the above code</h3>
+  </div>
+
+</ion-content>

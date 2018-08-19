@@ -1,0 +1,65 @@
+<!--
+  Generated template for the GetYourDrinkPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Use Your Drink</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+
+  <ion-card  id="bottle">
+    <!--<img src={{drink.image}}>
+    -->
+
+
+
+    <ion-card-title color="indigo" style="font-weight: bold; text-align: center; white-space: nowrap; ">{{drink.name}}</ion-card-title>
+    <ion-card-header style="font-weight: bold;">Left:<i>{{drink.ml_left}} ml</i> </ion-card-header>
+    <ion-card-content>
+      <div id="container">
+        <div id="glass">
+          <div id="water" >
+
+          </div>
+        </div>
+      </div>
+
+    </ion-card-content>
+
+    <ion-grid style="text-align: center">
+      <ion-row>
+        <ion-col>
+          <button class="quantity" ion-button round (click)="giveDrink(1)"><ion-icon name="beer"></ion-icon>&nbsp;30 ml</button >
+        </ion-col>
+        <ion-col>
+          <button class="quantity" ion-button round (click)="giveDrink(2)"><ion-icon name="beer"></ion-icon>&nbsp;60 ml</button >
+        </ion-col>
+        <ion-col>
+          <button class="quantity" ion-button round (click)="giveDrink(3)"><ion-icon name="beer"></ion-icon>&nbsp;90 ml</button >
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+
+
+  </ion-card>
+
+
+
+
+
+
+</ion-content>
